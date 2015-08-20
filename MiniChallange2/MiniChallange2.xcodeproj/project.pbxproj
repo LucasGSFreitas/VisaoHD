@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FDF946F1B83BA5A00B3E07B /* quadra_schoukball.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF946E1B83BA5A00B3E07B /* quadra_schoukball.png */; };
+		7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */; };
+		7FDF94751B863C2700B3E07B /* raqueteBadminton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF94741B863C2700B3E07B /* raqueteBadminton.png */; };
+		7FDF94771B863D4E00B3E07B /* petecaBadminton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF94761B863D4E00B3E07B /* petecaBadminton.jpg */; };
+		7FDF94791B863D9E00B3E07B /* petecaB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF94781B863D9E00B3E07B /* petecaB.png */; };
 		ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B1591B8399AD004634A7 /* AppDelegate.swift */; };
 		ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B15B1B8399AD004634A7 /* MiniChallange2.xcdatamodeld */; };
 		ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B15E1B8399AD004634A7 /* ViewController.swift */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FDF946E1B83BA5A00B3E07B /* quadra_schoukball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = quadra_schoukball.png; path = ../../../../Desktop/quadra_schoukball.png; sourceTree = "<group>"; };
+		7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadminton.swift; sourceTree = "<group>"; };
+		7FDF94741B863C2700B3E07B /* raqueteBadminton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raqueteBadminton.png; path = ../../../../Desktop/raqueteBadminton.png; sourceTree = "<group>"; };
+		7FDF94761B863D4E00B3E07B /* petecaBadminton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = petecaBadminton.jpg; path = ../../../../Desktop/petecaBadminton.jpg; sourceTree = "<group>"; };
+		7FDF94781B863D9E00B3E07B /* petecaB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = petecaB.png; path = ../../../../Desktop/petecaB.png; sourceTree = "<group>"; };
 		ADA0B1541B8399AD004634A7 /* MiniChallange2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallange2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA0B1581B8399AD004634A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA0B1591B8399AD004634A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +128,10 @@
 		ADA0B17C1B8399C9004634A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7FDF94781B863D9E00B3E07B /* petecaB.png */,
+				7FDF94761B863D4E00B3E07B /* petecaBadminton.jpg */,
+				7FDF94741B863C2700B3E07B /* raqueteBadminton.png */,
+				7FDF946E1B83BA5A00B3E07B /* quadra_schoukball.png */,
 				ADA0B1631B8399AD004634A7 /* Images.xcassets */,
 			);
 			name = Model;
@@ -135,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA0B15E1B8399AD004634A7 /* ViewController.swift */,
+				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -221,6 +236,10 @@
 			files = (
 				ADA0B1621B8399AD004634A7 /* Main.storyboard in Resources */,
 				ADA0B1671B8399AD004634A7 /* LaunchScreen.xib in Resources */,
+				7FDF94771B863D4E00B3E07B /* petecaBadminton.jpg in Resources */,
+				7FDF94791B863D9E00B3E07B /* petecaB.png in Resources */,
+				7FDF946F1B83BA5A00B3E07B /* quadra_schoukball.png in Resources */,
+				7FDF94751B863C2700B3E07B /* raqueteBadminton.png in Resources */,
 				ADA0B1641B8399AD004634A7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +260,7 @@
 			files = (
 				ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */,
 				ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */,
+				7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */,
 				ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +457,7 @@
 				ADA0B1781B8399AD004634A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADA0B1791B8399AD004634A7 /* Build configuration list for PBXNativeTarget "MiniChallange2Tests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +466,7 @@
 				ADA0B17B1B8399AD004634A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
