@@ -1,0 +1,30 @@
+{
+    "Sports": {
+        "Badminton": {
+            "History": "History O badminton é um dos esportes mais apreciados e populares do mundo, apenas ultrapassado pelo futebol, porém aqui no Brasil é pouco praticado e conhecido. Trata-se de uma atividade desportiva que pode ser praticada em termos individuais e/ou em pares. Requer muita agilidade de movimentos e rapidez de execução. Saiba tudo sobre o badminton e aprenda um pouco mais acerca deste desporto empolgante.",
+            "Apresentation": "O badminton é um dos esportes mais apreciados e populares do mundo, apenas ultrapassado pelo futebol, porém aqui no Brasil é pouco praticado e conhecido. Trata-se de uma atividade desportiva que pode ser praticada em termos individuais e/ou em pares. Requer muita agilidade de movimentos e rapidez de execução. Saiba tudo sobre o badminton e aprenda um pouco mais acerca deste desporto empolgante.",
+            "How To Play": [],
+            "Rules": [],
+            "Videos": [],
+            "Curiosities": [
+                            "A peteca de badminton possui 16 penas de ganso",
+                            "O badminton é o segundo esporte mais praticado no mundo. É muito popular em países do Oriente como, por exemplo, Cingapura, Índia, Indonésia, China, Paquistão, Japão e Tailândia.",
+                            "O badminton é um jogo muito rápido e a peteca pode atingir uma velocidade superior a 300 km/h numa raquetada",
+                            "As competições internacionais oficiais de Badminton são organizadas pela IBF (Federação Internacional de Badminton).",
+                            "No Brasil, as competições oficiais são organizadas pela CBB (Confederação Brasileira de Badminton).",
+                            "As principais competições de badminton são: Copa Sudirnan (duplas masculino e feminino), Copa Thomas (duplas masculinas), Copa Uber (duplas feminino). Porém, a competição mais importante é o Campeonato Mundial de Badminton. O último ocorreu em Londres (Inglaterra) em 2011.",
+                            "O badminton é uma modalidade das Olimpíadas desde 1992.",
+                            "Atualmente, a China pode ser considerada a grande potência do badminton mundial. O país foi o que mais ganhou medalhas de ouro nos Jogos Olímpicos de Londres 2012.",
+                            "O jogador de badminton que obteve grande destaque nas Olimpíadas de 2008, realizada em Pequim, foi o chinês Lin Dan. Ele foi campeão na categoria masculino simples. Já em 2012, nas Olimpíadas de Londres, Lin Dan repetiu o feito e ganhou novamente a medalha de ouro na mesma categoria.",
+                            "Nas Olimpíadas de Londres 2012, o badminton fez parte das competições."
+                            ]
+        },
+        "Tchoukball": {
+            "History": [],
+            "Apresentation": [],
+            "How To Play": [],
+            "Rules": [],
+            "Videos": []
+        }
+    }
+}

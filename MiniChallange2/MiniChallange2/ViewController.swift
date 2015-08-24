@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        println(AccessJSON.accessHistory("Badminton", type: "History"))
+        println(AccessJSON.acessArray("Badminton", type:"Curiosities")[5])
     }
 
     override func didReceiveMemoryWarning() {

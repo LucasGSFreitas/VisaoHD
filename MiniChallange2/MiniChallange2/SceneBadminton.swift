@@ -29,7 +29,6 @@ class SceneBadminton: UIViewController {
 
         saque()
         
-        
     }
     
     
