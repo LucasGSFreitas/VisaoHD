@@ -15,6 +15,7 @@
 		7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */; };
 		7FDF947C1B865D2000B3E07B /* petecaB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947A1B865D2000B3E07B /* petecaB.png */; };
 		7FDF947D1B865D2000B3E07B /* raqueteBadminton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */; };
+		7FE44C971B8CEFA900073824 /* SportsClickedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */; };
 		AD8D8C181B865D3A00741BFB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C171B865D3A00741BFB /* SwiftyJSON.swift */; };
 		AD8D8C1A1B865D5900741BFB /* Sports.json in Resources */ = {isa = PBXBuildFile; fileRef = AD8D8C191B865D5900741BFB /* Sports.json */; };
 		AD8D8C1C1B865DA400741BFB /* AcessJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C1B1B865DA400741BFB /* AcessJSON.swift */; };
@@ -48,6 +49,7 @@
 		7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadminton.swift; sourceTree = "<group>"; };
 		7FDF947A1B865D2000B3E07B /* petecaB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petecaB.png; sourceTree = "<group>"; };
 		7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raqueteBadminton.png; sourceTree = "<group>"; };
+		7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsClickedViewController.swift; sourceTree = "<group>"; };
 		AD8D8C171B865D3A00741BFB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		AD8D8C191B865D5900741BFB /* Sports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sports.json; sourceTree = "<group>"; };
 		AD8D8C1B1B865DA400741BFB /* AcessJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcessJSON.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
 				7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */,
 				7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */,
+				7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				AD8D8C1E1B87A82500741BFB /* RulesViewController.swift in Sources */,
 				AD8D8C201B87AC1E00741BFB /* RulesTableViewCell.swift in Sources */,
 				ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */,
+				7FE44C971B8CEFA900073824 /* SportsClickedViewController.swift in Sources */,
 				AD8D8C1C1B865DA400741BFB /* AcessJSON.swift in Sources */,
 				ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */,
 				7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */,
