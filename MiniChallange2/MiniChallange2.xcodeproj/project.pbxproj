@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F448D531B8B8EC300D0FF43 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */; };
+		7F448D551B8B9CB500D0FF43 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */; };
+		7F448D571B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */; };
 		7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */; };
 		7FDF947C1B865D2000B3E07B /* petecaB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947A1B865D2000B3E07B /* petecaB.png */; };
 		7FDF947D1B865D2000B3E07B /* raqueteBadminton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadminton.swift; sourceTree = "<group>"; };
 		7FDF947A1B865D2000B3E07B /* petecaB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petecaB.png; sourceTree = "<group>"; };
 		7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raqueteBadminton.png; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			children = (
 				ADA0B1601B8399AD004634A7 /* Main.storyboard */,
 				AD8D8C1F1B87AC1E00741BFB /* RulesTableViewCell.swift */,
+				7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -159,6 +166,8 @@
 				ADA0B15E1B8399AD004634A7 /* ViewController.swift */,
 				AD8D8C1D1B87A82500741BFB /* RulesViewController.swift */,
 				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
+				7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */,
+				7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -272,6 +281,9 @@
 				AD8D8C1C1B865DA400741BFB /* AcessJSON.swift in Sources */,
 				ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */,
 				7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */,
+				7F448D571B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift in Sources */,
+				7F448D531B8B8EC300D0FF43 /* HistoryViewController.swift in Sources */,
+				7F448D551B8B9CB500D0FF43 /* SportsViewController.swift in Sources */,
 				AD8D8C181B865D3A00741BFB /* SwiftyJSON.swift in Sources */,
 				ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */,
 			);
