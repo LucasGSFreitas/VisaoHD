@@ -16,6 +16,8 @@ class ViewController: UIViewController {
         
         println(AccessJSON.accessHistory("Badminton", type: "History"))
         println(AccessJSON.acessArray("Badminton", type:"Curiosities")[5])
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
