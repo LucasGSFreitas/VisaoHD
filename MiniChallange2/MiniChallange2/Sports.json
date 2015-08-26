@@ -20,10 +20,10 @@
                             ]
         },
         "Tchoukball": {
-            "History": [],
+            "History": "TCHOUKBALL EH DAORA",
             "Apresentation": [],
             "How To Play": [],
-            "Rules": [],
+            "Rules": ["regra 1","regra 2"],
             "Videos": []
         }
     }

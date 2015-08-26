@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2D30991B8E1FBC001A5626 /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D30981B8E1FBC001A5626 /* HowToPlayViewController.swift */; };
 		7F448D531B8B8EC300D0FF43 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */; };
 		7F448D551B8B9CB500D0FF43 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */; };
 		7F448D571B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F2D30981B8E1FBC001A5626 /* HowToPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
 		7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */,
 				7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */,
 				7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */,
+				7F2D30981B8E1FBC001A5626 /* HowToPlayViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				7F448D551B8B9CB500D0FF43 /* SportsViewController.swift in Sources */,
 				AD8D8C181B865D3A00741BFB /* SwiftyJSON.swift in Sources */,
 				ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */,
+				7F2D30991B8E1FBC001A5626 /* HowToPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

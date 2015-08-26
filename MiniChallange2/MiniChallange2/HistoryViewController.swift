@@ -15,8 +15,16 @@ class HistoryViewController: UIViewController {
     var type = String()
     var sport = String()
     var history = String()
+    
+    var photoName = ""
+    
     override func viewDidLoad() {
-        sport = "Badminton"
+        if photoName == "badminton.png" {
+            sport = "Badminton"
+        }else if photoName == "tchoukball.png" {
+            sport = "Tchoukball"
+        }
+        
         type = "History"
         history = AccessJSON.accessHistory(self.sport, type: self.type)
         

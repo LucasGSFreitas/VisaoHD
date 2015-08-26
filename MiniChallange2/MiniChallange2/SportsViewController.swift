@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SportsViewController: UIViewController {
+class SportsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let reuseIdentifier = "sportsCell"
-    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 35.0, bottom: 50.0, right: 20.0)
+    private let sectionInsets = UIEdgeInsets(top: 60.0, left: 20, bottom: 60.0, right: 20.0)
     
     let photos = ["badminton.png","tchoukball.png"]
     
@@ -29,15 +29,22 @@ class SportsViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if(segue.identifier == "sportsClicked" )
+        {
+            
+            let sportsClickedViewController = segue.destinationViewController as! SportsClickedViewController
+            
+            sportsClickedViewController.photoName = sender as! String
+            
+            
+        }
     }
-    */
 
 }
 
@@ -61,10 +68,20 @@ extension SportsViewController : UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SportsCollectionViewCell
         //2
         let sportPhoto = photos[indexPath.row]
-        //cell.backgroundColor = UIColor.blackColor()
         //3
         let photo = UIImage(named: sportPhoto)
         cell.imageView.image = photo
+        
+        cell.layer.borderWidth = CGFloat(1.5)
+        
+        cell.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1).CGColor
+        
+        cell.layer.borderColor = UIColor.grayColor().CGColor
+        
+        cell.layer.cornerRadius = CGFloat(5)
+        
+        cell.backgroundColor = UIColor(red: 233, green: 235, blue: 235, alpha: 100)
+
         
         if indexPath.row == 0 {
             cell.LabelName.text = "Badminton"
@@ -75,23 +92,18 @@ extension SportsViewController : UICollectionViewDataSource {
         
         return cell
     }
+    
+   
 }
 
 extension SportsViewController : UICollectionViewDelegateFlowLayout {
     //1
-//    func collectionView(collectionView: UICollectionView,
-//        layout collectionViewLayout: UICollectionViewLayout,
-//        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-//            
-//            let flickrPhoto =  photoForIndexPath(indexPath)
-//            //2
-//            if var size = flickrPhoto.thumbnail?.size {
-//                size.width += 10
-//                size.height += 10
-//                return size
-//            }
-//            return CGSize(width: 100, height: 100)
-//    }
+    func collectionView(collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+            
+            return CGSize(width: 130, height: 130)
+    }
     
     //3
     func collectionView(collectionView: UICollectionView,
@@ -100,11 +112,12 @@ extension SportsViewController : UICollectionViewDelegateFlowLayout {
             return sectionInsets
     }
     
-     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row)
         
-        println(indexPath.row)
+        var photoName = photos[indexPath.row]
         
-        
+        performSegueWithIdentifier("sportsClicked", sender: photoName)
     }
 }
 

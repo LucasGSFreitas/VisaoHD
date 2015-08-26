@@ -14,9 +14,16 @@ class RulesViewController: UIViewController, UITableViewDataSource, UITableViewD
     var sport = String()
     var arrayOfData = [String]()
     
+    var photoName = ""
+    
     override func viewDidLoad() {
-        sport = "Badminton"
-        type = "Curiosities"
+        if photoName == "badminton.png" {
+            sport = "Badminton"
+        }else if photoName == "tchoukball.png" {
+            sport = "Tchoukball"
+        }
+
+        type = "Rules"
         arrayOfData = AccessJSON.acessArray(self.sport, type: self.type)
         println(self.arrayOfData)
     }
