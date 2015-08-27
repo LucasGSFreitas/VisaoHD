@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SportsViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-
+class SportsViewController: UIViewController, UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     private let reuseIdentifier = "sportsCell"
@@ -17,21 +17,34 @@ class SportsViewController: UIViewController, UICollectionViewDelegateFlowLayout
     
     let photos = ["badminton.png","tchoukball.png"]
     
+    let customPresentAnimationController = CustomPresentAnimationController()
+    let customDismissAnimationController = CustomDismissAnimationController()
+    
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return operation == .Push ? customPresentAnimationController : customDismissAnimationController
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDismissAnimationController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        navigationController?.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -41,29 +54,29 @@ class SportsViewController: UIViewController, UICollectionViewDelegateFlowLayout
             let sportsClickedViewController = segue.destinationViewController as! SportsClickedViewController
             
             sportsClickedViewController.photoName = sender as! String
-            
+            sportsClickedViewController.transitioningDelegate = self
             
         }
     }
-
+    
 }
 
 
 extension SportsViewController : UICollectionViewDataSource {
     
     //1
-     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     //2
-     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return photos.count
     }
     
     //3
-     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         //1
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! SportsCollectionViewCell
         //2
@@ -81,7 +94,7 @@ extension SportsViewController : UICollectionViewDataSource {
         cell.layer.cornerRadius = CGFloat(5)
         
         cell.backgroundColor = UIColor(red: 233, green: 235, blue: 235, alpha: 100)
-
+        
         
         if indexPath.row == 0 {
             cell.LabelName.text = "Badminton"
@@ -93,7 +106,7 @@ extension SportsViewController : UICollectionViewDataSource {
         return cell
     }
     
-   
+    
 }
 
 extension SportsViewController : UICollectionViewDelegateFlowLayout {
