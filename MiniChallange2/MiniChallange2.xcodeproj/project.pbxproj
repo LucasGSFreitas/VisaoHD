@@ -13,6 +13,11 @@
 		7F448D571B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */; };
 		7FD4ACE91B8CDD0A0024E0C2 /* redeB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4ACE81B8CDD0A0024E0C2 /* redeB.png */; };
 		7FD4ACED1B8CE5BB0024E0C2 /* quadra_B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FD4ACEC1B8CE5BB0024E0C2 /* quadra_B.jpg */; };
+		7FD4ACEF1B8F7D150024E0C2 /* SceneBadmintonAtack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4ACEE1B8F7D150024E0C2 /* SceneBadmintonAtack.swift */; };
+		7FD4ACF11B8F81EE0024E0C2 /* SceneTchoukBallAtack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4ACF01B8F81EE0024E0C2 /* SceneTchoukBallAtack.swift */; };
+		7FD4ACF31B8F81FF0024E0C2 /* SceneTchoukBallDefense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4ACF21B8F81FF0024E0C2 /* SceneTchoukBallDefense.swift */; };
+		7FD4ACF51B8F821F0024E0C2 /* SceneTchoukBallDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4ACF41B8F821F0024E0C2 /* SceneTchoukBallDemo.swift */; };
+		7FD4ACF71B8F822B0024E0C2 /* SceneBadmintonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4ACF61B8F822B0024E0C2 /* SceneBadmintonDemo.swift */; };
 		7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */; };
 		7FDF947C1B865D2000B3E07B /* petecaB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947A1B865D2000B3E07B /* petecaB.png */; };
 		7FDF947D1B865D2000B3E07B /* raqueteBadminton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */; };
@@ -48,6 +53,11 @@
 		7F448D561B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FD4ACE81B8CDD0A0024E0C2 /* redeB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeB.png; sourceTree = "<group>"; };
 		7FD4ACEC1B8CE5BB0024E0C2 /* quadra_B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quadra_B.jpg; sourceTree = "<group>"; };
+		7FD4ACEE1B8F7D150024E0C2 /* SceneBadmintonAtack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadmintonAtack.swift; sourceTree = "<group>"; };
+		7FD4ACF01B8F81EE0024E0C2 /* SceneTchoukBallAtack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTchoukBallAtack.swift; sourceTree = "<group>"; };
+		7FD4ACF21B8F81FF0024E0C2 /* SceneTchoukBallDefense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTchoukBallDefense.swift; sourceTree = "<group>"; };
+		7FD4ACF41B8F821F0024E0C2 /* SceneTchoukBallDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTchoukBallDemo.swift; sourceTree = "<group>"; };
+		7FD4ACF61B8F822B0024E0C2 /* SceneBadmintonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadmintonDemo.swift; sourceTree = "<group>"; };
 		7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneBadminton.swift; sourceTree = "<group>"; };
 		7FDF947A1B865D2000B3E07B /* petecaB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = petecaB.png; sourceTree = "<group>"; };
 		7FDF947B1B865D2000B3E07B /* raqueteBadminton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raqueteBadminton.png; sourceTree = "<group>"; };
@@ -175,11 +185,16 @@
 			children = (
 				ADA0B15E1B8399AD004634A7 /* ViewController.swift */,
 				AD8D8C1D1B87A82500741BFB /* RulesViewController.swift */,
-				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
 				7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */,
 				7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */,
 				7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */,
 				7F2D30981B8E1FBC001A5626 /* HowToPlayViewController.swift */,
+				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
+				7FD4ACEE1B8F7D150024E0C2 /* SceneBadmintonAtack.swift */,
+				7FD4ACF01B8F81EE0024E0C2 /* SceneTchoukBallAtack.swift */,
+				7FD4ACF21B8F81FF0024E0C2 /* SceneTchoukBallDefense.swift */,
+				7FD4ACF41B8F821F0024E0C2 /* SceneTchoukBallDemo.swift */,
+				7FD4ACF61B8F822B0024E0C2 /* SceneBadmintonDemo.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -293,14 +308,19 @@
 				AD8D8C201B87AC1E00741BFB /* RulesTableViewCell.swift in Sources */,
 				ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */,
 				7FE44C971B8CEFA900073824 /* SportsClickedViewController.swift in Sources */,
+				7FD4ACEF1B8F7D150024E0C2 /* SceneBadmintonAtack.swift in Sources */,
 				AD8D8C1C1B865DA400741BFB /* AcessJSON.swift in Sources */,
 				ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */,
 				7FDF94711B84E31E00B3E07B /* SceneBadminton.swift in Sources */,
+				7FD4ACF31B8F81FF0024E0C2 /* SceneTchoukBallDefense.swift in Sources */,
 				7F448D571B8B9F9A00D0FF43 /* SportsCollectionViewCell.swift in Sources */,
+				7FD4ACF71B8F822B0024E0C2 /* SceneBadmintonDemo.swift in Sources */,
+				7FD4ACF11B8F81EE0024E0C2 /* SceneTchoukBallAtack.swift in Sources */,
 				7F448D531B8B8EC300D0FF43 /* HistoryViewController.swift in Sources */,
 				7F448D551B8B9CB500D0FF43 /* SportsViewController.swift in Sources */,
 				AD8D8C181B865D3A00741BFB /* SwiftyJSON.swift in Sources */,
 				ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */,
+				7FD4ACF51B8F821F0024E0C2 /* SceneTchoukBallDemo.swift in Sources */,
 				7F2D30991B8E1FBC001A5626 /* HowToPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

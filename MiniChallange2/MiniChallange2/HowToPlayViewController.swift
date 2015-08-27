@@ -56,16 +56,43 @@ class HowToPlayViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func defenseButton(sender: UIButton) {
+        
+        if photoName == "badminton.png" {
+            performSegueWithIdentifier("badmintonAnimation", sender: nil)
+        }
+        else if photoName == "tchoukball.png" {
+            performSegueWithIdentifier("TchoukBallDefense", sender: nil)
+        }
+    }
+    
+    @IBAction func atackButton(sender: UIButton) {
+        if photoName == "badminton.png" {
+            performSegueWithIdentifier("BadmintonAtack", sender: nil)
+        }
+        else if photoName == "tchoukball.png" {
+            performSegueWithIdentifier("tchoukballAtackAnimation", sender: nil)
+        }
+    }
+    
+    @IBAction func demoButton(sender: UIButton) {
+        if photoName == "badminton.png" {
+            performSegueWithIdentifier("badmintonAnimation", sender: nil)
+        }
+        else if photoName == "tchoukball.png" {
+            performSegueWithIdentifier("tchoukballAnimation", sender: nil)
+        }
+    }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+       
     }
-    */
+
     
     
     
