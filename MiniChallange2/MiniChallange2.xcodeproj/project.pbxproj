@@ -27,6 +27,7 @@
 		AD8D8C1C1B865DA400741BFB /* AcessJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C1B1B865DA400741BFB /* AcessJSON.swift */; };
 		AD8D8C1E1B87A82500741BFB /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C1D1B87A82500741BFB /* RulesViewController.swift */; };
 		AD8D8C201B87AC1E00741BFB /* RulesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C1F1B87AC1E00741BFB /* RulesTableViewCell.swift */; };
+		AD8D8C2C1B8F799A00741BFB /* SceneTchoukball.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D8C2B1B8F799A00741BFB /* SceneTchoukball.swift */; };
 		ADA0B15A1B8399AD004634A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B1591B8399AD004634A7 /* AppDelegate.swift */; };
 		ADA0B15D1B8399AD004634A7 /* MiniChallange2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B15B1B8399AD004634A7 /* MiniChallange2.xcdatamodeld */; };
 		ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA0B15E1B8399AD004634A7 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		AD8D8C1B1B865DA400741BFB /* AcessJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcessJSON.swift; sourceTree = "<group>"; };
 		AD8D8C1D1B87A82500741BFB /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		AD8D8C1F1B87AC1E00741BFB /* RulesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesTableViewCell.swift; sourceTree = "<group>"; };
+		AD8D8C2B1B8F799A00741BFB /* SceneTchoukball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTchoukball.swift; sourceTree = "<group>"; };
 		ADA0B1541B8399AD004634A7 /* MiniChallange2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniChallange2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA0B1581B8399AD004634A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA0B1591B8399AD004634A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				AD8D8C1D1B87A82500741BFB /* RulesViewController.swift */,
 				7F448D521B8B8EC300D0FF43 /* HistoryViewController.swift */,
 				7F448D541B8B9CB500D0FF43 /* SportsViewController.swift */,
+				AD8D8C2B1B8F799A00741BFB /* SceneTchoukball.swift */,
 				7FE44C961B8CEFA900073824 /* SportsClickedViewController.swift */,
 				7F2D30981B8E1FBC001A5626 /* HowToPlayViewController.swift */,
 				7FDF94701B84E31E00B3E07B /* SceneBadminton.swift */,
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD8D8C1E1B87A82500741BFB /* RulesViewController.swift in Sources */,
+				AD8D8C2C1B8F799A00741BFB /* SceneTchoukball.swift in Sources */,
 				AD8D8C201B87AC1E00741BFB /* RulesTableViewCell.swift in Sources */,
 				ADA0B15F1B8399AD004634A7 /* ViewController.swift in Sources */,
 				7FE44C971B8CEFA900073824 /* SportsClickedViewController.swift in Sources */,

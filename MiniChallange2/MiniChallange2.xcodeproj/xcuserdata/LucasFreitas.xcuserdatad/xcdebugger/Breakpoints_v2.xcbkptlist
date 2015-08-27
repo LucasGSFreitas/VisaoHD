@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiniChallange2/SceneTchoukball.swift"
+            timestampString = "462388843.742234"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SceneTchoukball"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiniChallange2.SceneTchoukball.init (MiniChallange2.SceneTchoukball.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; MiniChallange2.SceneTchoukball"
+                  moduleName = "MiniChallange2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LucasFreitas/Desktop/VisaoHD/MiniChallange2/MiniChallange2/SceneTchoukball.swift"
+                  timestampString = "462388843.745917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "142">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiniChallange2.SceneTchoukball.init (MiniChallange2.SceneTchoukball.Type)(coder : ObjectiveC.NSCoder) -&gt; MiniChallange2.SceneTchoukball"
+                  moduleName = "MiniChallange2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LucasFreitas/Desktop/VisaoHD/MiniChallange2/MiniChallange2/SceneTchoukball.swift"
+                  timestampString = "462388843.746398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
