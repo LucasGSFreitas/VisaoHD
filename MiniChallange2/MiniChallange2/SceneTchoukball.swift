@@ -98,42 +98,42 @@ class SceneTchoukball: UIViewController {
     //---------------------ATÉ AQUI-----------------------------------------------------
     
     @IBAction func startAnimation(sender: AnyObject) {
-        UIView.animateKeyframesWithDuration(4.0, delay: 0.0, options: nil, animations: { () -> Void in
+        UIView.animateKeyframesWithDuration(2.0, delay: 0.0, options: nil, animations: { () -> Void in
             
 
-            UIView.addKeyframeWithRelativeStartTime(0.23, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.3, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
                 //self.imageMan1.alpha = 0
                 self.imageMan1.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
                 self.imageBall1.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
-            UIView.addKeyframeWithRelativeStartTime(0.25, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.31, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
                 self.imageMan2.alpha = 1
                 self.imageBall2.alpha = 1
                 
             })
-            UIView.addKeyframeWithRelativeStartTime(0.44, relativeDuration: 0.00000000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.60, relativeDuration: 0.00000000000001, animations: { () -> Void in
                 //self.imageMan2.alpha = 0
                 //self.imageMan2.backgroundColor = .redColor()
                 self.imageMan2.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
                 self.imageBall2.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
-            UIView.addKeyframeWithRelativeStartTime(0.46, relativeDuration: 0.00000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.61, relativeDuration: 0.00000000001, animations: { () -> Void in
                 self.imageMan3.alpha = 1
                 self.imageBall3.alpha = 1
             })
-            UIView.addKeyframeWithRelativeStartTime(0.60, relativeDuration: 0.00000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.97, relativeDuration: 0.00000000001, animations: { () -> Void in
                 //self.imageMan3.alpha = 0
                 self.imageMan3.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
                 self.imageBall3.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
-            UIView.addKeyframeWithRelativeStartTime(0.62, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
+            UIView.addKeyframeWithRelativeStartTime(0.98, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
                 self.imageMan4.alpha = 1
                 self.imageBall4.alpha = 1
                 
                 ///------------------------------ A FUNCAO DE ANIMACAO 3D FOI CHAMADA AQUI ÓÓÓÓÓÓÓ--------------------------------
-                self.playBall()
+                //self.playBall()
             })
-            UIView.addKeyframeWithRelativeStartTime(0.76, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
+            /*UIView.addKeyframeWithRelativeStartTime(0.76, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
                 //self.imageMan4.alpha = 0
                 self.imageMan4.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
@@ -146,9 +146,11 @@ class SceneTchoukball: UIViewController {
             })
             UIView.addKeyframeWithRelativeStartTime(0.99, relativeDuration: 0.00000000000000001, animations: { () -> Void in
                 self.imageMan6.alpha = 1
-            })
+            })*/
         }) { (result) -> Void in
-            
+            if result {
+                self.playBall()
+            }
         }
         //UIView.animateKeyframesWithDuration(2.0, delay: 0.3, options: nil, animations: { () -> Void in
             
