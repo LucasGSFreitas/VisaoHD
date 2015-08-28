@@ -146,7 +146,19 @@ class SceneBadmintonAtack: UIViewController {
     
     override func animationDidStop(anim: CAAnimation!, finished flag: Bool)
     {
-        if(anim == "saque1")
+        let identifier = anim.valueForKey("animationName") as! String
+        //---------------------------------------------
+        //---------------------------------------------
+        //----------Giulinana
+        //-----------aqui vc usa o identifier que ja
+        //-----------tem o nome da animacao
+        //---------------------------------------------
+        //---------------------------------------------
+        //---------------------------------------------
+        //---------------------------------------------
+        
+        
+        if(identifier == "saque1")
         {
             if aux == 0 {
                 self.saqueRaqueParte2()
@@ -182,7 +194,16 @@ class SceneBadmintonAtack: UIViewController {
         self.imagePeteca.layer.zPosition = -100
         
         self.imageRaquete.layer.addAnimation(animation, forKey: "saque1")
-        
+        //---------------------------------------------
+        //---------------------------------------------
+        //----------Giulinana
+        //-----------aqui vc seta o identifier da animacao
+        //-----------o nome da animacao é animationName
+        //---------------------------------------------
+        //---------------------------------------------
+        //---------------------------------------------
+        //---------------------------------------------
+        animation.setValue("saque1", forKey: "animationName")
         
     }
     
@@ -202,6 +223,7 @@ class SceneBadmintonAtack: UIViewController {
         
         self.imagePeteca.layer.addAnimation(animation, forKey: "saque1")
         
+        animation.setValue("saque2", forKey: "animationName")
         
     }
     
@@ -221,7 +243,7 @@ class SceneBadmintonAtack: UIViewController {
         
         self.imagePeteca.layer.addAnimation(animation, forKey: "Parte3")
         
-        
+         animation.setValue("Parte3", forKey: "animationName")
     }
     
     
