@@ -13,7 +13,7 @@ class RulesViewController: UIViewController, UITableViewDataSource, UITableViewD
     var type = String()
     var sport = String()
     var arrayOfData = [String]()
-    
+    @IBOutlet weak var tableView: UITableView!
     var photoName = ""
     
     override func viewDidLoad() {
@@ -26,6 +26,8 @@ class RulesViewController: UIViewController, UITableViewDataSource, UITableViewD
         type = "Rules"
         arrayOfData = AccessJSON.acessArray(self.sport, type: self.type)
         println(self.arrayOfData)
+        tableView.estimatedRowHeight = 65.0
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -256,6 +256,9 @@
                             <constraint firstItem="v2F-xs-hnI" firstAttribute="width" secondItem="0DQ-aF-yXw" secondAttribute="width" multiplier="0.82" id="wdQ-tH-gMW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="v2F-xs-hnI" id="xu2-PE-dnh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bm2-Tw-WF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1254,7 +1257,7 @@
     <resources>
         <image name="Clipboard_Background_T.xcf" width="850" height="1099"/>
         <image name="book" width="900" height="900"/>
-        <image name="fundo-tchoukball" width="2150" height="2087"/>
+        <image name="fundo-tchoukball" width="2500" height="2427"/>
         <image name="simple_man2" width="300" height="320"/>
         <image name="simple_man3" width="249" height="309"/>
         <image name="simple_man4" width="278" height="304"/>

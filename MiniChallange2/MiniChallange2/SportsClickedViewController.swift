@@ -65,10 +65,8 @@ class SportsClickedViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "history" {
-            
             let historyViewController = segue.destinationViewController as! HistoryViewController
             historyViewController.photoName = sender as! String
-            
         }
         else if segue.identifier == "rules" {
             let rulesViewController = segue.destinationViewController as! RulesViewController
