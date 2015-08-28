@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C35A3CAD-D74B-4327-8254-CBD58D277F37</string>
 	<key>IDESourceControlProjectName</key>
-	<string>MiniChallange2</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8760E162BDC6D0C2860E007B927F09F229F248BF</key>
 		<string>https://github.com/LucasGSFreitas/VisaoHD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MiniChallange2/MiniChallange2.xcodeproj</string>
+	<string>MiniChallange2/MiniChallange2.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8760E162BDC6D0C2860E007B927F09F229F248BF</key>

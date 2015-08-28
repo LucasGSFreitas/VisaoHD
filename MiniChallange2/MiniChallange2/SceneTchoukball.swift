@@ -16,6 +16,10 @@ class SceneTchoukball: UIViewController {
     @IBOutlet weak var imageMan4: UIImageView!
     @IBOutlet weak var imageMan5: UIImageView!
     @IBOutlet weak var imageMan6: UIImageView!
+    @IBOutlet weak var imageBall1: UIImageView!
+    @IBOutlet weak var imageBall2: UIImageView!
+    @IBOutlet weak var imageBall3: UIImageView!
+    @IBOutlet weak var imageBall4: UIImageView!
     
     
     let images = [
@@ -42,30 +46,56 @@ class SceneTchoukball: UIViewController {
         imageMan4.alpha = 0
         imageMan5.alpha = 0
         imageMan6.alpha = 0
+        
+        imageBall1.alpha = 1
+        imageBall2.alpha = 0
+        imageBall3.alpha = 0
+        imageBall4.alpha = 0
     }
     
-//    func animateImageView() {
-//        CATransaction.begin()
-//        
-//        CATransaction.setAnimationDuration(animationDuration)
-//        CATransaction.setCompletionBlock {
-//            let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(self.switchingInterval * NSTimeInterval(NSEC_PER_SEC)))
-//            dispatch_after(delay, dispatch_get_main_queue()) {
-//                self.animateImageView()
-//            }
-//        }
-//        
-//        let transition = CATransition()
-//        transition.type = kCATransitionFade
-//        
-//        
-//        imageView.layer.addAnimation(transition, forKey: kCATransition)
-//        imageView.image = images[index]
-//        
-//        CATransaction.commit()
-//        
-//        index = index < images.count - 1 ? index + 1 : 0
-//    }
+    
+    //---------------------AQUI GIULINAAAA, MITA NESSA ANIMACAO TBM ------------------------------
+    func playBall()
+    {
+        var transladeAndScaleTransform = imageBall4.layer.transform
+        
+        //Para fazer a peteca ir para o outro lado da rede.
+        
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 20, -250, 0)
+        rotateBallImage(transladeAndScaleTransform)
+        self.imageBall4.layer.zPosition = 2
+        
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, -10, 0)
+        rotateBallImage(transladeAndScaleTransform)
+        // self.imagePeteca.layer.zPosition = -2
+        
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 70, 10, 0)
+        rotateBallImage(transladeAndScaleTransform)
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 10, 160, 0)
+        
+        
+        
+        transladeAndScaleTransform = CATransform3DScale(transladeAndScaleTransform, 0.5, 0.5, 1)
+        
+        rotateBallImage(transladeAndScaleTransform)
+        
+    }
+    func rotateBallImage(transform:CATransform3D) {
+        
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.fillMode = kCAFillModeForwards
+        animation.removedOnCompletion = false
+        animation.duration = 2.0
+        animation.toValue = NSValue(CATransform3D: transform)
+        
+        //self.imageQuadra.layer.zPosition = -1000
+        
+        self.imageBall4.layer.addAnimation(animation, forKey: nil)
+        
+        
+    }
+    
+    //---------------------ATÉ AQUI-----------------------------------------------------
     
     @IBAction func startAnimation(sender: AnyObject) {
         UIView.animateKeyframesWithDuration(4.0, delay: 0.0, options: nil, animations: { () -> Void in
@@ -74,25 +104,34 @@ class SceneTchoukball: UIViewController {
             UIView.addKeyframeWithRelativeStartTime(0.23, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
                 //self.imageMan1.alpha = 0
                 self.imageMan1.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
+                self.imageBall1.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
             UIView.addKeyframeWithRelativeStartTime(0.25, relativeDuration: 0.00000000000000000001, animations: { () -> Void in
                 self.imageMan2.alpha = 1
+                self.imageBall2.alpha = 1
                 
             })
             UIView.addKeyframeWithRelativeStartTime(0.44, relativeDuration: 0.00000000000001, animations: { () -> Void in
                 //self.imageMan2.alpha = 0
                 //self.imageMan2.backgroundColor = .redColor()
                 self.imageMan2.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
+                self.imageBall2.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
             UIView.addKeyframeWithRelativeStartTime(0.46, relativeDuration: 0.00000000001, animations: { () -> Void in
                 self.imageMan3.alpha = 1
+                self.imageBall3.alpha = 1
             })
             UIView.addKeyframeWithRelativeStartTime(0.60, relativeDuration: 0.00000000001, animations: { () -> Void in
                 //self.imageMan3.alpha = 0
                 self.imageMan3.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
+                self.imageBall3.frame = CGRect(x:-3000, y: -3000, width: 10, height:10)
             })
             UIView.addKeyframeWithRelativeStartTime(0.62, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
                 self.imageMan4.alpha = 1
+                self.imageBall4.alpha = 1
+                
+                ///------------------------------ A FUNCAO DE ANIMACAO 3D FOI CHAMADA AQUI ÓÓÓÓÓÓÓ--------------------------------
+                self.playBall()
             })
             UIView.addKeyframeWithRelativeStartTime(0.76, relativeDuration: 0.00000000000000000000001, animations: { () -> Void in
                 //self.imageMan4.alpha = 0
