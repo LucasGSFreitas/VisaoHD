@@ -71,7 +71,7 @@ class HowToPlayViewController: UIViewController {
             performSegueWithIdentifier("BadmintonAtack", sender: nil)
         }
         else if photoName == "tchoukball.png" {
-            performSegueWithIdentifier("tchoukballAtackAnimation", sender: nil)
+            performSegueWithIdentifier("TchoukBallAtack", sender: nil)
         }
     }
     

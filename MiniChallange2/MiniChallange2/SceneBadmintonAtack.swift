@@ -11,7 +11,7 @@ import UIKit
 class SceneBadmintonAtack: UIViewController {
     
     let eyePosition = CGFloat(600.0)
-    var aux = 0
+    var aux: Int!
     
     @IBOutlet weak var imageRede: UIImageView!
     @IBOutlet weak var imageQuadra: UIImageView!
@@ -38,6 +38,7 @@ class SceneBadmintonAtack: UIViewController {
         let imageQ = UIImage(named:imageNamedQuadra)
         imageQuadra.image = imageQ
         
+        aux = 0
         
         
         
@@ -68,9 +69,9 @@ class SceneBadmintonAtack: UIViewController {
     {
         //Make rotation over all transformations already done
         var rotationAndPerspectiveTransform = imageRaquete.layer.transform
-        
         rotationAndPerspectiveTransform.m34 = 1.0 / eyePosition
         
+
         //Para rotacionar a raquete:
         rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, CGFloat(M_PI * 0.1), CGFloat(0.0), CGFloat(1.0), CGFloat(0.0));
         
@@ -79,7 +80,8 @@ class SceneBadmintonAtack: UIViewController {
         rotationAndPerspectiveTransform = CATransform3DRotate(rotationAndPerspectiveTransform, CGFloat(M_PI * 0.3), CGFloat(0.0), CGFloat(0.0), CGFloat(1.0));
         
         rotateRaqueteImage(rotationAndPerspectiveTransform)
-        
+                self.imageRede.layer.zPosition = 2
+
         
         
     }
@@ -117,23 +119,24 @@ class SceneBadmintonAtack: UIViewController {
         
         //Para fazer a peteca ir para o outro lado da rede.
         
-        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, -155, 0)
-        rotatePetecaImage(transladeAndScaleTransform)
-        self.imagePeteca.layer.zPosition = 2
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, -300, 0)
+        rotatePetecaImageFinal(transladeAndScaleTransform)
+        //self.imagePeteca.layer.zPosition = 2
         
         transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, -10, 0)
-        rotatePetecaImage(transladeAndScaleTransform)
+        rotatePetecaImageFinal(transladeAndScaleTransform)
+
+        
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, 100, 0)
+        rotatePetecaImageFinal(transladeAndScaleTransform)
+        
+        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 5, 95, 0)
         
         
-        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 50, 10, 0)
-        rotatePetecaImage(transladeAndScaleTransform)
-        transladeAndScaleTransform = CATransform3DTranslate(transladeAndScaleTransform, 10, 100, 0)
         
+        transladeAndScaleTransform = CATransform3DScale(transladeAndScaleTransform, 0.7, 0.7, 1)
         
-        
-        transladeAndScaleTransform = CATransform3DScale(transladeAndScaleTransform, 0.5, 0.5, 1)
-        
-        rotatePetecaImage(transladeAndScaleTransform)
+        rotatePetecaImageFinal(transladeAndScaleTransform)
         
     }
     
@@ -147,33 +150,26 @@ class SceneBadmintonAtack: UIViewController {
     override func animationDidStop(anim: CAAnimation!, finished flag: Bool)
     {
         let identifier = anim.valueForKey("animationName") as! String
-        //---------------------------------------------
-        //---------------------------------------------
-        //----------Giulinana
-        //-----------aqui vc usa o identifier que ja
-        //-----------tem o nome da animacao
-        //---------------------------------------------
-        //---------------------------------------------
-        //---------------------------------------------
-        //---------------------------------------------
-        
+
         
         if(identifier == "saque1")
         {
             if aux == 0 {
                 self.saqueRaqueParte2()
                 self.saquePetecaParte2()
+                aux = 1
+
             }
-            aux == 1
             
         }
-        else if anim == "Parte3"
+        else if identifier == "Parte3"
         {
             if aux == 1
             {
                 self.saquePetecaParte3()
+                aux = 2
             }
-            aux = 2
+            
             
         }
     }
@@ -187,23 +183,15 @@ class SceneBadmintonAtack: UIViewController {
         animation.duration = 0.9
         animation.toValue = NSValue(CATransform3D: transform)
         animation.delegate = self
-        //animation.accessibilityValue = "saque1"
+        animation.setValue("saque1", forKey: "animationName")
         
-        self.imageQuadra.layer.zPosition = -1000
-        self.imageRede.layer.zPosition = -100
+        self.imageQuadra.layer.zPosition = -100000000000
+        self.imageRede.layer.zPosition = -10000000000
+        self.imageRaquete.layer.zPosition = 10000
         self.imagePeteca.layer.zPosition = -100
         
         self.imageRaquete.layer.addAnimation(animation, forKey: "saque1")
-        //---------------------------------------------
-        //---------------------------------------------
-        //----------Giulinana
-        //-----------aqui vc seta o identifier da animacao
-        //-----------o nome da animacao é animationName
-        //---------------------------------------------
-        //---------------------------------------------
-        //---------------------------------------------
-        //---------------------------------------------
-        animation.setValue("saque1", forKey: "animationName")
+        
         
     }
     
@@ -215,15 +203,31 @@ class SceneBadmintonAtack: UIViewController {
         animation.duration = 0.8
         animation.toValue = NSValue(CATransform3D: transform)
         animation.delegate = self
-       // animation.toValue = "saque1"
+        animation.setValue("saque1", forKey: "animationName")
         
         self.imageQuadra.layer.zPosition = -1000
-        self.imageRede.layer.zPosition = 100
+       // self.imageRede.layer.zPosition = 100
         
         
         self.imagePeteca.layer.addAnimation(animation, forKey: "saque1")
         
-        animation.setValue("saque2", forKey: "animationName")
+        
+    }
+    
+    func rotatePetecaImageFinal(transform:CATransform3D) {
+        
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.fillMode = kCAFillModeForwards
+        animation.removedOnCompletion = false
+        animation.duration = 0.8
+        animation.toValue = NSValue(CATransform3D: transform)
+        
+        self.imageQuadra.layer.zPosition = -1000
+        self.imageRede.layer.zPosition = 100000
+        
+        
+        self.imagePeteca.layer.addAnimation(animation, forKey:nil)
+        
         
     }
     
@@ -235,15 +239,14 @@ class SceneBadmintonAtack: UIViewController {
         animation.duration = 0.8
         animation.toValue = NSValue(CATransform3D: transform)
         animation.delegate = self
-       // animation.accessibilityValue = "Parte3"
-        
+        animation.setValue("Parte3", forKey: "animationName")
+
         self.imageQuadra.layer.zPosition = -1000
-        self.imageRede.layer.zPosition = 100
+        //self.imageRede.layer.zPosition = 100
         
         
         self.imagePeteca.layer.addAnimation(animation, forKey: "Parte3")
         
-         animation.setValue("Parte3", forKey: "animationName")
     }
     
     
