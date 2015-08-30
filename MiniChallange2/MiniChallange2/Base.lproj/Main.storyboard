@@ -560,15 +560,19 @@
                                 <state key="normal" title="Start!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="start:" destination="jRT-HV-u2i" eventType="touchUpInside" id="edG-Fl-9FP"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-b1-dN5" userLabel="Quadra">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-pD-tod" userLabel="Jogador1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="9jn-Vn-ai1"/>
-                                    <constraint firstAttribute="height" constant="116" id="har-BA-9EO"/>
+                                    <constraint firstAttribute="width" constant="147" id="9jn-Vn-ai1">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="62"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="116" id="har-BA-9EO">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -586,8 +590,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZzF-sR-sXu" userLabel="Jogador2">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="147" id="rFR-IJ-ryU"/>
-                                    <constraint firstAttribute="height" constant="116" id="ur4-NQ-ubB"/>
+                                    <constraint firstAttribute="width" constant="147" id="rFR-IJ-ryU">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="98"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="116" id="ur4-NQ-ubB">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="112"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -605,8 +613,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xyZ-EN-KRN" userLabel="Bola">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="49" id="CdY-hT-AW8"/>
-                                    <constraint firstAttribute="height" constant="41" id="dma-Vg-U7Z"/>
+                                    <constraint firstAttribute="width" constant="49" id="CdY-hT-AW8">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="29"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="41" id="dma-Vg-U7Z">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="29"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -621,29 +633,52 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-tchoukball" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-b1-dN5" userLabel="Quadra">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yxz-b1-dN5" firstAttribute="top" secondItem="iFa-pD-tod" secondAttribute="bottom" constant="-179" id="4K4-fb-DbJ"/>
+                            <constraint firstItem="yxz-b1-dN5" firstAttribute="top" secondItem="iFa-pD-tod" secondAttribute="bottom" constant="-179" id="4K4-fb-DbJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-142"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="M9I-CB-OMq" secondAttribute="trailing" constant="44" id="5lp-r2-CHk"/>
-                            <constraint firstItem="ZzF-sR-sXu" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="-139" id="8g2-wc-JzR"/>
+                            <constraint firstItem="ZzF-sR-sXu" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="-139" id="8g2-wc-JzR">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
                             <constraint firstItem="M9I-CB-OMq" firstAttribute="top" secondItem="xDu-VH-Fqi" secondAttribute="bottom" constant="51" id="EHU-kA-brC"/>
-                            <constraint firstItem="Bgr-Pm-yU9" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="206" id="FXz-J0-GX1"/>
-                            <constraint firstItem="yxz-b1-dN5" firstAttribute="leading" secondItem="iFa-pD-tod" secondAttribute="trailing" constant="-212" id="IDb-5s-biV"/>
-                            <constraint firstItem="ZzF-sR-sXu" firstAttribute="leading" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="-161" id="e8F-As-xqZ"/>
-                            <constraint firstItem="yxz-b1-dN5" firstAttribute="top" secondItem="xDu-VH-Fqi" secondAttribute="bottom" constant="127" id="f9L-Lh-s1Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="36" id="hk2-E6-WBZ"/>
-                            <constraint firstItem="xyZ-EN-KRN" firstAttribute="leading" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="-125" id="nYG-GW-ypi"/>
-                            <constraint firstItem="yxz-b1-dN5" firstAttribute="leading" secondItem="3Vp-Rv-QWo" secondAttribute="leadingMargin" constant="19" id="sOM-U9-c4i"/>
-                            <constraint firstItem="xyZ-EN-KRN" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="-119" id="u9W-x7-0Jd"/>
+                            <constraint firstItem="Bgr-Pm-yU9" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="206" id="FXz-J0-GX1">
+                                <variation key="heightClass=regular-widthClass=compact" constant="278"/>
+                            </constraint>
+                            <constraint firstItem="yxz-b1-dN5" firstAttribute="leading" secondItem="iFa-pD-tod" secondAttribute="trailing" constant="-212" id="IDb-5s-biV">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-113"/>
+                            </constraint>
+                            <constraint firstItem="ZzF-sR-sXu" firstAttribute="leading" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="-161" id="e8F-As-xqZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="3"/>
+                            </constraint>
+                            <constraint firstItem="yxz-b1-dN5" firstAttribute="top" secondItem="xDu-VH-Fqi" secondAttribute="bottom" constant="127" id="f9L-Lh-s1Z">
+                                <variation key="heightClass=regular-widthClass=compact" constant="211"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="36" id="hk2-E6-WBZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="160"/>
+                            </constraint>
+                            <constraint firstItem="xyZ-EN-KRN" firstAttribute="leading" secondItem="yxz-b1-dN5" secondAttribute="trailing" constant="-125" id="nYG-GW-ypi">
+                                <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                            </constraint>
+                            <constraint firstItem="yxz-b1-dN5" firstAttribute="leading" secondItem="3Vp-Rv-QWo" secondAttribute="leadingMargin" constant="19" id="sOM-U9-c4i">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="xyZ-EN-KRN" firstAttribute="top" secondItem="yxz-b1-dN5" secondAttribute="bottom" constant="-119" id="u9W-x7-0Jd">
+                                <variation key="heightClass=regular-widthClass=compact" constant="67"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="M9I-CB-OMq"/>
-                                <exclude reference="yxz-b1-dN5"/>
                                 <exclude reference="iFa-pD-tod"/>
                                 <exclude reference="ZzF-sR-sXu"/>
                                 <exclude reference="xyZ-EN-KRN"/>
+                                <exclude reference="yxz-b1-dN5"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="FXz-J0-GX1"/>
@@ -663,10 +698,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="M9I-CB-OMq"/>
-                                <include reference="yxz-b1-dN5"/>
                                 <include reference="iFa-pD-tod"/>
                                 <include reference="ZzF-sR-sXu"/>
                                 <include reference="xyZ-EN-KRN"/>
+                                <include reference="yxz-b1-dN5"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="FXz-J0-GX1"/>
@@ -684,10 +719,16 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="ballImage" destination="xyZ-EN-KRN" id="RQ6-YC-8Nj"/>
+                        <outlet property="imageQuadra" destination="yxz-b1-dN5" id="Aad-Bi-NOG"/>
+                        <outlet property="player1image" destination="iFa-pD-tod" id="12j-Jr-yKv"/>
+                        <outlet property="player2image" destination="ZzF-sR-sXu" id="iGZ-9X-L93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhd-V5-imW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="399"/>
+            <point key="canvasLocation" x="2460" y="409.5"/>
         </scene>
         <!--Scene Tchoukball-->
         <scene sceneID="Atq-uH-aGT">
