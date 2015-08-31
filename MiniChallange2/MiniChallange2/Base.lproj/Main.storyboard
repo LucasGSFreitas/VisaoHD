@@ -751,65 +751,65 @@
                                     <action selector="startAnimation:" destination="QGN-fc-9rj" eventType="touchUpInside" id="0RO-m1-K55"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-tchoukball" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-lL-bie">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fundo-tchoukball" translatesAutoresizingMaskIntoConstraints="NO" id="ZIp-lL-bie">
                                 <rect key="frame" x="-3" y="20" width="606" height="430"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man3" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-vE-Xhj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man3" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-vE-Xhj">
                                 <rect key="frame" x="451" y="136" width="123" height="222"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="222" id="Yia-ph-bFQ"/>
                                     <constraint firstAttribute="width" secondItem="pIh-vE-Xhj" secondAttribute="height" multiplier="41:74" id="gce-pa-MF0"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man2" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-Xi-wJt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man2" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-Xi-wJt">
                                 <rect key="frame" x="436" y="65" width="140" height="273"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="wY7-Xi-wJt" secondAttribute="height" multiplier="20:39" id="nvT-c0-o7v"/>
                                     <constraint firstAttribute="height" constant="273" id="uyC-tn-TFM"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man4" translatesAutoresizingMaskIntoConstraints="NO" id="f5p-zi-wlu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man4" translatesAutoresizingMaskIntoConstraints="NO" id="f5p-zi-wlu">
                                 <rect key="frame" x="490" y="181" width="113" height="238"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="238" id="ZVL-PF-Z2H"/>
                                     <constraint firstAttribute="width" secondItem="f5p-zi-wlu" secondAttribute="height" multiplier="113:238" id="ef0-n2-fiq"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man5" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-Zm-qBb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man5" translatesAutoresizingMaskIntoConstraints="NO" id="LYj-Zm-qBb">
                                 <rect key="frame" x="403" y="91" width="100" height="222"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="222" id="JI4-x5-0ye"/>
                                     <constraint firstAttribute="width" secondItem="LYj-Zm-qBb" secondAttribute="height" multiplier="50:111" id="UcW-gJ-n4z"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man7" translatesAutoresizingMaskIntoConstraints="NO" id="Abg-cb-xwC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man7" translatesAutoresizingMaskIntoConstraints="NO" id="Abg-cb-xwC">
                                 <rect key="frame" x="386" y="85" width="87" height="208"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Abg-cb-xwC" secondAttribute="height" multiplier="87:208" id="IM8-S2-Ent"/>
                                     <constraint firstAttribute="height" constant="208" id="aaf-TC-G6E"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simple_man6" translatesAutoresizingMaskIntoConstraints="NO" id="ldt-B9-sbk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simple_man6" translatesAutoresizingMaskIntoConstraints="NO" id="ldt-B9-sbk">
                                 <rect key="frame" x="347" y="91" width="90" height="209"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="209" id="8Lt-Lu-Y4z"/>
                                     <constraint firstAttribute="width" secondItem="ldt-B9-sbk" secondAttribute="height" multiplier="90:209" id="K7m-hf-zHF"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-hX-25c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-hX-25c">
                                 <rect key="frame" x="481" y="250" width="28" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1FT-hX-25c" secondAttribute="height" multiplier="4:5" id="YJk-qc-Wc5"/>
                                     <constraint firstAttribute="height" constant="35" id="xEK-NR-NcM"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-L4-tb4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="4Jt-L4-tb4">
                                 <rect key="frame" x="455" y="190" width="28" height="35"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-tK-lkx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-tK-lkx">
                                 <rect key="frame" x="432" y="170" width="28" height="35"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="jnQ-I3-Hvz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="jnQ-I3-Hvz">
                                 <rect key="frame" x="392" y="124" width="28" height="35"/>
                             </imageView>
                         </subviews>
