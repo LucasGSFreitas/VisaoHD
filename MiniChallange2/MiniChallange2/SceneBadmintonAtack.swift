@@ -223,7 +223,7 @@ class SceneBadmintonAtack: UIViewController {
         animation.toValue = NSValue(CATransform3D: transform)
         
         self.imageQuadra.layer.zPosition = -1000
-        self.imageRede.layer.zPosition = 100000
+        self.imageRede.layer.zPosition = 10
         
         
         self.imagePeteca.layer.addAnimation(animation, forKey:nil)
@@ -242,7 +242,7 @@ class SceneBadmintonAtack: UIViewController {
         animation.setValue("Parte3", forKey: "animationName")
 
         self.imageQuadra.layer.zPosition = -1000
-        //self.imageRede.layer.zPosition = 100
+//        self.imageRede.layer.zPosition = -100
         
         
         self.imagePeteca.layer.addAnimation(animation, forKey: "Parte3")

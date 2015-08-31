@@ -24,15 +24,28 @@ class HowToPlayViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if photoName == "tchoukball.png" {
+            defenseButton.setTitle("Pass", forState: .Normal)
+        }
+        else if photoName == "badminton.png" {
+            defenseButton.setTitle("Atack", forState: .Normal)
+        }
         
         defenseButton.layer.cornerRadius = CGFloat(6.0)
-        defenseButton.setTitle("Defense", forState: .Normal)
         defenseButton.titleLabel!.font = UIFont(name: "Georgia", size: 21.0)
         defenseButton.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1).CGColor
         defenseButton.layer.borderWidth = CGFloat(1.5)
         
+        if photoName == "tchoukball.png" {
+            atackButton.setTitle("Atack", forState: .Normal)
+        }
+        
+        else if photoName == "badminton.png" {
+            atackButton.setTitle("Serve", forState: .Normal)
+        }
+        
+        
         atackButton.layer.cornerRadius = CGFloat(6.0)
-        atackButton.setTitle("Atack", forState: .Normal)
         atackButton.titleLabel!.font = UIFont(name: "Georgia", size: 21.0)
         atackButton.layer.borderColor = UIColor(red: 151/255, green: 151/255, blue: 151/255, alpha: 1).CGColor
         atackButton.layer.borderWidth = CGFloat(1.5)
